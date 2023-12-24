@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root{
+    --Moderate_violet: hsl(263, 55%, 52%);
+    --Very_dark_grayish_blue: hsl(217, 19%, 35%);
+    --Very_dark_blackish_blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(0, 0%, 81%);
+    --Light_grayish_blue: hsl(210, 46%, 95%);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    background-color: var(--Light_gray);
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 7vw;
+    gap: 1vw;
+}
+.block{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.3vw;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    justify-content: start;
+}
+img{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+}
+h3{
+    font-size: 1vw;
+}
+h2{
+    font-size: 1.5vw;
+    line-height: 1.8vw;
+}
+#verified-graduate, #paragraph{
+    color:rgba(255, 255, 255, 0.500);
+}
+#verified-graduate-black ,#paragraph-balck{
+    color: rgba(0, 0, 0, 0.500);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1vw;
+}
+#elem-1{
+    padding: 1.3vw;
+    background-color: var(--Moderate_violet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-position: 80% 0%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    grid-column: span 2;
+    box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+}
+#elem-2{
+    padding: 1.3vw;
+    background-color: var(--Very_dark_grayish_blue);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+}
+#elem-3{
+    padding: 1.3vw;
+    color: black;
+    background-color: var(--Light_grayish_blue);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    grid-column: 1;
+    grid-row: 2;
+    box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+}
+#elem-4{
+    padding: 1.3vw;
+    background-color: var(--Very_dark_blackish_blue);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    grid-column: span 2;
+    box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+}
+#elem-5{
+    padding: 1.3vw;
+    color: black;
+    background-color: var(--White);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    grid-column: 4;
+    grid-row: 1/span 2 !important;
+    box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+}
+.attribution { 
+    color: black;
+    font-size: 13px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width:600px){
+    .main{
+        height: 250vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        padding: 4vw 7vw;
+        gap: 90px;
+    }
+    .block{
+        height: 225vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2vw;
+    }
+    .top{
+        padding: 2vw 3vw;
+        display: flex;
+        flex-direction: row;
+        gap:5vw;
+        align-items: center;
+        justify-content: start;
+    }
+    img{
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+    }
+    h3{
+        font-size: 3.4vw;
+    }
+    h2{
+        font-size: 5vw;
+        line-height: 5.1vw;
+    }
+    #verified-graduate, #paragraph{
+        color:rgba(255, 255, 255, 0.500);
+    }
+    #verified-graduate-black ,#paragraph-balck{
+        color: rgba(0, 0, 0, 0.500);
+    }
+    .content{
+         padding: 0vw 3vw 5vw 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 3.5vw;
+    }
+    #elem-1{
+        padding: 3vw 3vw 3vw 3vw;
+        width: 100%;
+        height: fit-content;
+        background-color: var(--Moderate_violet);
+        background-image: url(./images/bg-pattern-quotation.svg);
+        background-position: 80% 0%;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+    }
+    #elem-2{
+        width: 100%;
+        height: fit-content;
+        padding: 1.3vw;
+        background-color: var(--Very_dark_grayish_blue);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+    }
+    #elem-3{
+        width: 100%;
+        height: fit-content;
+        padding: 1.3vw;
+        color: black;
+        background-color: var(--Light_grayish_blue);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap:1vw;
+        grid-row: 2;
+        box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+    }
+    #elem-4{
+        width: 100%;
+        height: fit-content;
+        padding: 1.3vw;
+        background-color: var(--Very_dark_blackish_blue);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap:1vw;
+        box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+    }
+    #elem-5{
+        width: 100%;
+        height: fit-content;
+        padding: 1.3vw;
+        color: black;
+        background-color: var(--White);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap:1vw;
+        box-shadow: 3px 3px 15px 2px rgba(50, 50, 50, 0.500);
+    }
+} 
